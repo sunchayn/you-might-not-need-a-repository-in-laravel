@@ -5,4 +5,4 @@ You might not need a repository in Laravel: 3 alternatives
 
 We will crack the controversy of the repository pattern in Laravel. The good and the bad, and what alternatives we can use to build a maintainable codebase. 
 
-Read the full article [[Medium](#tbd)].
+Read the full article [[Medium](https://medium.com/studocu-techblog/you-might-not-need-a-repository-in-laravel-3-alternatives-c241638a3922)].
