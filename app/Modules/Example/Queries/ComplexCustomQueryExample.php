@@ -166,9 +166,9 @@ class ComplexCustomQueryExample
             ),
         );
 
-        // Example 4, use know relation value if it is set.
+        // Example 4, use known relation value if it is set.
         // This will allow us to conditionally load the dummyRelation4 only when we don't have the information.
-        // This example makes sense only in the cases where the relation cannot diverge theoretically from the $this->model and the results.
+        // This example makes sense only in the cases where the loaded relation cannot diverge from the $this->model and the results.
         if ($this->model->dummy_relation_id) {
             $results->each->setRelation('dummyRelation4', $this->model->dumyRelation);
         } else {
