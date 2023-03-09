@@ -141,15 +141,14 @@ class ComplexCustomQueryExample
      */
     private function eagerLoadRelatedModels(Collection $results): void
     {
-        // Example 1, normal eager with subset of columns.
+        // Example 1, normal eager loading with subset of columns.
         $results->load('dummyRelation1:id,name,type');
 
         // Example 2, set the current model as the related model.
         $results->each->setRelation('dummyRelation2', $this->dummyModel);
 
         // Example 3, eager load with limit.
-        // Because laravel natively does not support eager loading with a limit on a collection, you can do it
-        // as part of the custom query class.
+        // Because laravel natively does not support eager loading with a limit, you can do it as part of the custom query class.
 
         // step 1, use a union to get all limited related models
         $queries = $results->map(fn (Model $model) => $model->relatedModels()->limit(5)); // The limit can be configured.
