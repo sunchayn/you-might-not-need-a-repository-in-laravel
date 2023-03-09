@@ -87,12 +87,12 @@ class ComplexCustomQueryExample
 
     private function compute(): Collection
     {
-        // Example of early exist 1.
+        // Example of early exit 1.
         if ($this->model->type === 'not-allowed') {
             return Collection::empty();
         }
 
-        // Example of early exist 2.
+        // Example of early exit 2.
         if ($this->someCriteriaValue() < $this->threshold) {
             // if complex criteria is not met, we don't have to compute anything for this model.
             return Collection::empty();
