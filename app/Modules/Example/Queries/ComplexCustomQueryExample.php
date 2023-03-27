@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\DB;
  * The examples include:
  * - Serialize/Deserialize the cache.
  * - Using other models results.
- * - Early exists.
+ * - Early exits.
  * - Dynamic empty state.
  * - Custom eager loading.
  * - Filter out results.
